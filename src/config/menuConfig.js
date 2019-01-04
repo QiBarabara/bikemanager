@@ -1,7 +1,7 @@
 const menuList = [
     {
         title: '首页',
-        key: '/home'
+        key: '/Home'
     },
     {
         title: 'UI',

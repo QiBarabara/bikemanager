@@ -1,4 +1,6 @@
- .header{
+@import "../../style/default";
+.header{
+   background-color: white;
    .header-top{
      height: 60px;
      line-height: 60px;
@@ -13,14 +15,31 @@
       height: 60px;
       line-height: 60px;
       padding: 0 20px;
-      border-top: 1px solid #87CEFA;
+      border-top: 2px dashed #87CEFA;
      .breadcrumb-title{
+       font-size: @fontC;
        padding: 0 50px;
+       &:after{
+         position: absolute;
+         left: 70px;
+         top: 39px;
+         content: '';
+         border-top:9px solid @colorM;
+         border-left:12px solid transparent;
+         border-right: 12px solid transparent;
+       }
      }
      .weather{
        text-align: right;
        .weather-detail{
          margin-left: 10px;
+         font-family: '华文楷体';
+       }
+       .date{
+         margin-right: 10px;
+       }
+       img{
+         width: 25px;
        }
      }
    }
