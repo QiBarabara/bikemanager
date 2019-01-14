@@ -1,9 +1,18 @@
 @import "default";
+html,body{
+  height:100%;
+  width:100%;
+  overflow:hidden;
+  margin:0;
+  padding:0;
+}
 .container{
   background-color:#001529;
+  height: 100%;
   .nav-left{
     background-color:#001529;
     color: white;
+    height: 100%;
   }
   .main{
     background-color:@colorK;
@@ -11,5 +20,8 @@
   .content{
     position: relative;
     padding: 20px;
+    height:450px;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 }
